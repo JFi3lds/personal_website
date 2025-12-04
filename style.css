@@ -1,0 +1,80 @@
+/* Global reset-ish */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Base page styles */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f4f5f7;
+  color: #222;
+}
+
+/* Make sure images never overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+/* Navbar tweaks */
+.navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Main content spacing (Bootstrap already gives some, this just softens it) */
+main {
+  min-height: 60vh;
+}
+
+/* Cards */
+.card {
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Make sure nothing creates horizontal scrollbars */
+.container,
+.row,
+.col {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Small screen tweaks */
+@media (max-width: 576px) {
+  .lead {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
